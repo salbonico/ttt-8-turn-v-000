@@ -21,6 +21,8 @@ def move(board, input, xo="X")
   index = input.to_i
   index = index -1
 board[index] = xo
+display_board(board)
+turn(board)
 end
 
 def turn(board)
