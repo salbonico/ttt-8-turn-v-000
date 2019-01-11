@@ -31,13 +31,11 @@ end
 
 def turn(board)
 
-  end
+
   print "Please enter 1-9:"
   input = gets.strip
   index=input_to_index(input)
   if valid_move?(board,index) == true
-   counter = counter + 1
-    puts counter
     move(board,index,xo)
   else turn(board)
 end
