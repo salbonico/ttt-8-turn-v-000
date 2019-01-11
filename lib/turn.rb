@@ -28,10 +28,10 @@ display_board(board)
 counter = counter + 1
 turn(board)
 end
-
+counter = 1
 def turn(board)
   xo = "O"
-  counter = 1
+
   if counter % 2 == 0
     xo = "O"
   else xo = "X"
