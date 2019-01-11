@@ -7,6 +7,8 @@ def display_board(board)
 end
 
 def valid_move?(board, index)
+  index = input.to_i
+  index = index -1
   if index <0 || index >8
     return false
   elsif board[index] == " "
@@ -15,8 +17,13 @@ def valid_move?(board, index)
   end
 end
 
-def move(board, input, xo="X")
-  index = input.to_i
-  index = index -1
+def move(board, index, xo="X")
+  
 board[index] = xo
+end
+
+def turn(board)
+  puts "Please enter 1-9"
+  input = gets.strip
+  if 
 end
