@@ -26,15 +26,11 @@ def move(board, index, xo)
 board[index] = xo
 display_board(board)
 
-turn(board)
-end
-counter = 1
-def turn(board, counter)
-  xo = "O"
 
-  if counter % 2 == 0
-    xo = "O"
-  else xo = "X"
+end
+
+def turn(board)
+  xo = "O"
   end
   print "Please enter 1-9:"
   input = gets.strip
