@@ -25,7 +25,7 @@ def move(board, index, xo)
 
 board[index] = xo
 display_board(board)
-counter = counter + 1
+
 turn(board)
 end
 counter = 1
@@ -40,7 +40,7 @@ def turn(board, counter)
   input = gets.strip
   index=input_to_index(input)
   if valid_move?(board,index) == true
-
+   counter = counter + 1
     puts counter
     move(board,index,xo)
   else turn(board)
