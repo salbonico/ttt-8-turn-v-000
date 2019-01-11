@@ -17,9 +17,14 @@ def valid_move?(board, input)
   end
 end
 
-def move(board, input, xo="X")
+def input_to_index(input)
   index = input.to_i
   index = index -1
+  return index
+end
+
+def move(board, input, xo="X")
+
 board[index] = xo
 display_board(board)
 turn(board)
