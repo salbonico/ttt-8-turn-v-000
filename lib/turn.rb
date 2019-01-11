@@ -34,13 +34,14 @@ def turn(board)
   if counter % 2 == 0
     xo = "O"
   else xo = "X"
+  end
   print "Please enter 1-9:"
   input = gets.strip
   index=input_to_index(input)
 
   if valid_move?(board,index) == true
     move(board,index,xo)
-    counter = counter + 1
+    counter += 1
   else turn(board)
 end
 end
