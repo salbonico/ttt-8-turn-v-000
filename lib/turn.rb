@@ -18,7 +18,7 @@ end
 
 def input_to_index(input)
   index = input.to_i
-  index = index -1
+  index = index - 1
   return index
 end
 
