@@ -7,8 +7,7 @@ def display_board(board)
 end
 
 def valid_move?(board, input)
-  index = input.to_i
-  index = index -1
+  input_to_index(input)
   if index <0 || index >8
     return false
   elsif board[index] == " "
@@ -24,7 +23,7 @@ def input_to_index(input)
 end
 
 def move(board, input, xo="X")
-
+input_to_index(input)
 board[index] = xo
 display_board(board)
 turn(board)
