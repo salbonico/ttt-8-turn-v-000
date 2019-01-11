@@ -41,6 +41,7 @@ def turn(board)
 
   if valid_move?(board,index) == true
     counter += 1
+    puts counter
     move(board,index,xo)
   else turn(board)
 end
