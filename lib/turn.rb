@@ -29,7 +29,7 @@ turn(board)
 end
 
 def turn(board)
-  xo = "X"
+  xo = "O"
   counter = 1
   if counter % 2 == 0
     xo = "O"
