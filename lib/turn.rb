@@ -20,4 +20,3 @@ def move(board, input, xo="X")
   index = index -1
 board[index] = xo
 end
-
