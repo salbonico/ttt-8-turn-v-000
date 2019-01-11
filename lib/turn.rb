@@ -21,7 +21,7 @@ def input_to_index(input)
   return index
 end
 
-def move(board, index, xo)
+def move(board, index, xo ="X")
 
 board[index] = xo
 display_board(board)
@@ -30,7 +30,7 @@ display_board(board)
 end
 
 def turn(board)
-  xo = "O"
+
   end
   print "Please enter 1-9:"
   input = gets.strip
